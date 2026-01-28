@@ -41,9 +41,9 @@ BitTorrent v2, Certificate Transparency, Blockchain-like ledgers, etc.).
 - Audit Proofs: Generates the sibling hashes (audit path) required to prove that a specific block belongs to a specific root.
 - Layer Access: Allows retrieving entire layers of the tree as contiguous binary strings.
 
-# PUBLIC METHODS
+# METHODS
 
-## `root()`
+## `root( )`
 
 Returns the binary SHA-256 root hash of the entire tree.
 
@@ -60,9 +60,10 @@ Returns an arrayref of binary hashes required to verify the block at `$index`.
 
 Returns a contiguous binary string containing `$count` hashes from the tree at the specified `$level`.
 
-## `verify_hash( $class, $index, $hash, $audit_path, $expected_root )`
+## `verify_hash( $index, $hash, $audit_path, $expected_root )`
 
-Static method. Performs the Merkle proof calculation. Returns true if the calculated root matches `$expected_root`.
+Static method that performs the Merkle proof calculation. Returns a true value if the calculated root matches
+`$expected_root`.
 
 # AUTHOR
 

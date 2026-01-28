@@ -49,9 +49,9 @@ BitTorrent v2, Certificate Transparency, Blockchain-like ledgers, etc.).
 
 =back
 
-=head1 PUBLIC METHODS
+=head1 METHODS
 
-=head2 C<root()>
+=head2 C<root( )>
 
 Returns the binary SHA-256 root hash of the entire tree.
 
@@ -68,9 +68,10 @@ Returns an arrayref of binary hashes required to verify the block at C<$index>.
 
 Returns a contiguous binary string containing C<$count> hashes from the tree at the specified C<$level>.
 
-=head2 C<verify_hash( $class, $index, $hash, $audit_path, $expected_root )>
+=head2 C<verify_hash( $index, $hash, $audit_path, $expected_root )>
 
-Static method. Performs the Merkle proof calculation. Returns true if the calculated root matches C<$expected_root>.
+Static method that performs the Merkle proof calculation. Returns a true value if the calculated root matches
+C<$expected_root>.
 
 =head1 AUTHOR
 

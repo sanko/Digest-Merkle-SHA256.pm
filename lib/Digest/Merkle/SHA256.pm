@@ -102,7 +102,7 @@ class Digest::Merkle::SHA256 v1.0.0 {
         $height >= $k ? $self->get_layer( $height - $k ) : $self->root;
     }
 
-    sub verify_hash ( $class, $index, $hash, $audit_path, $expected_root ) {
+    sub verify_hash ( $s, $index, $hash, $audit_path, $expected_root ) {
         my $current_hash  = $hash;
         my $current_index = $index;
         for my $sibling_hash (@$audit_path) {
