@@ -55,7 +55,7 @@
    "provides" : {
       "Digest::Merkle::SHA256" : {
          "file" : "lib/Digest/Merkle/SHA256.pm",
-         "version" : "v1.0.0"
+         "version" : "v1.0.1"
       }
    },
    "release_status" : "stable",
@@ -73,7 +73,7 @@
          "web" : "https://github.com/sanko/Digest-Merkle-SHA256.pm"
       }
    },
-   "version" : "v1.0.0",
+   "version" : "v1.0.1",
    "x_help_wanted" : [
       "Tester",
       "Documenter"

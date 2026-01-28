@@ -2,9 +2,10 @@ use v5.40;
 use feature 'class';
 no warnings 'experimental::class';
 #
-class Digest::Merkle::SHA256 v1.0.0 {
+class Digest::Merkle::SHA256 v1.0.1 {
     use Digest::SHA qw[sha256];
     use Carp qw[croak];
+    #
     field $file_size  : param : reader;
     field $block_size : param : reader //= 16384;                   # 16KiB
     field $height     : reader;
